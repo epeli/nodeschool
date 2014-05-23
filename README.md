@@ -30,12 +30,12 @@ http://expressjs.com/
 ## Uploads
 
   - https://www.npmjs.org/package/multiparty
-  - https://github.com/substack/stream-handbook
-  - http://www.manning.com/cantelon/
 
 ## Books
 
   - RESTful Web Services http://shop.oreilly.com/product/9780596529260.do
+  - https://github.com/substack/stream-handbook
+  - http://www.manning.com/cantelon/
 
 ## Documentation tools
 
