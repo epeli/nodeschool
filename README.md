@@ -16,6 +16,10 @@ http://expressjs.com/
     - https://github.com/visionmedia/supertest
     - http://visionmedia.github.io/superagent/
 
+## Tools
+
+ - JSHint! http://www.jshint.com/
+
 
 ## Clustering
 

@@ -44,13 +44,9 @@ app.use(function requireUserSession(req, res, next) {
     res.redirect("/login");
 });
 
-app.get("/whoami", function(req, res) {
-    res.json(req.user);
-});
-
 app.get("/logout", function(req, res) {
     req.session.destroy();
-    res.redirect("/");
+    res.redirect("/login");
 });
 
 module.exports = app;
