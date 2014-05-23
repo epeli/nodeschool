@@ -6,8 +6,8 @@ http://expressjs.com/
 
 ## Alternatives
 
-  - http://mcavage.me/node-restify/
-  http://spumko.github.io/
+  - Restify http://mcavage.me/node-restify/
+  - hapi.js http://spumko.github.io/
 
 ## Testing
 
@@ -21,4 +21,24 @@ http://expressjs.com/
 
   - http://nodejs.org/api/cluster.html
 
+## Databases
+
+  - SQL! http://bookshelfjs.org/
+  - Mongo http://mongoosejs.com/
+  - Redis https://github.com/mranney/node_redis
+
+## Uploads
+
+  - https://www.npmjs.org/package/multiparty
+  - https://github.com/substack/stream-handbook
+  - http://www.manning.com/cantelon/
+
+## Books
+
+  - RESTful Web Services http://shop.oreilly.com/product/9780596529260.do
+
+## Documentation tools
+
+  - http://apidocjs.com/
+  - http://yui.github.io/yuidoc/
 

@@ -2,11 +2,12 @@
 var express = require("express");
 
 var app = express();
+var config = require("./config.json");
 
 app.use(require("body-parser")());
 app.use(require("cookie-parser")());
 app.use(require("express-session")({
-    secret: "sessionsecret", // XXX
+    secret: config.sessionSecret
 }));
 
 
