@@ -15,6 +15,26 @@ describe("/api/posts", function() {
         });
     });
 
+    /*
+
+    // https://github.com/expressjs/session
+    it("gives empty array when without posts GET /api/posts", function(done) {
+
+        context.agent
+        .get("/api/posts")
+        .end(function(err, res) {
+            if (err) return done(err);
+
+            assert.equal(200, res.status);
+            assert.deepEqual([], res.body);
+            done();
+        });
+
+    });
+
+
+    // db.js
+    // db.generateId()
     it("can create new blog post using POST method", function(done) {
 
         context.agent
@@ -68,6 +88,7 @@ describe("/api/posts", function() {
 
     });
 
+    // http://expressjs.com/4x/api.html#res.status
     it("responds not found (404) on missing post", function(done) {
 
         context.agent
@@ -79,10 +100,6 @@ describe("/api/posts", function() {
             done();
         });
 
-    });
-
-    it("can edit post using PUT", function() {
-    
     });
 
     // http://expressjs.com/4x/api.html#req.is
@@ -107,6 +124,7 @@ describe("/api/posts", function() {
         });
 
     });
+    */
 
 
 });

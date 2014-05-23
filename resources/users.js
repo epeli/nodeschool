@@ -1,28 +1,16 @@
 
 var express = require("express");
 var path = require("path");
-var basicAuth = require("basic-auth");
 
 var db = require("../db");
 var app = express.Router();
 
 app.use(function setUserFromSession(req, res, next) {
-    if (!req.session.loggedInUser) return next();
-    db.get("user:" + req.session.loggedInUser, function(err, user) {
-        if (err) return next(err);
-        req.user = user;
-        next();
-    });
+    res.status(501).end(); // TODO
 });
 
 app.use(function setUserFromBasicAuth(req, res, next) {
-    var auth = basicAuth(req);
-    if (!auth) return next();
-    db.get("user:" + auth.name, function(err, user) {
-        if (!user) return res.status(404).end("no such user");
-        req.user = user;
-        next();
-    });
+    res.status(501).end(); // TODO
 });
 
 app.get("/login", function(req, res) {

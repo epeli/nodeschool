@@ -7,6 +7,7 @@ var app = require("../server");
 
 // resources/users.js
 // https://github.com/visionmedia/node-basic-auth
+// npm install --save basic-auth
 describe("basic auth", function() {
 
     before(function(done) {

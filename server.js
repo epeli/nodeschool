@@ -12,6 +12,7 @@ app.use(require("express-session")({
 
 app.use(require("./resources/users"));
 app.use(require("./resources/posts"));
+app.use(require("./resources/comments"));
 
 
 app.use(require("serve-static")(__dirname + "/public"));
