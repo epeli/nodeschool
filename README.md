@@ -46,3 +46,7 @@ http://expressjs.com/
   - http://apidocjs.com/
   - http://yui.github.io/yuidoc/
 
+
+## Other
+
+- Dojo timer http://jsfiddle.net/uda82/1/ :)
