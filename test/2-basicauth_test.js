@@ -12,7 +12,7 @@ describe("basic auth", function() {
 
     before(function(done) {
         db.reset();
-        db.set("post:1", {
+        db.set("blog:1", {
             title: "Post title",
             content: "Post content"
         }, done);
@@ -31,6 +31,19 @@ describe("basic auth", function() {
                 {"title":"Post title","content":"Post content"},
                 res.body
             );
+            done();
+        });
+
+    });
+
+    it("it fails with a wrong password GET /api/posts/1", function(done) {
+
+        request(app)
+        .get("/api/posts/1")
+        .auth("admin", "secret2")
+        .end(function(err, res) {
+            if (err) return done(err);
+            assert.equal(401, res.status);
             done();
         });
 

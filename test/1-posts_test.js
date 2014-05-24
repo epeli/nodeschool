@@ -15,9 +15,10 @@ describe("/api/posts", function() {
         });
     });
 
-    /*
+    
 
-    // https://github.com/expressjs/session
+    // https://github.com/ex
+    
     it("gives empty array when without posts GET /api/posts", function(done) {
 
         context.agent
@@ -32,7 +33,7 @@ describe("/api/posts", function() {
 
     });
 
-
+    
     // db.js
     // db.generateId()
     it("can create new blog post using POST method", function(done) {
@@ -44,7 +45,6 @@ describe("/api/posts", function() {
             content: "Post content"
         }).end(function(err, res) {
             if (err) return done(err);
-
             assert.equal(200, res.status);
             assert.deepEqual({ ok: true }, res.body);
             done();
@@ -52,7 +52,7 @@ describe("/api/posts", function() {
 
     });
 
-
+    
     // db.getAllWithPrefix(prefix)
     it("can list created blog posts from GET /api/posts", function(done) {
 
@@ -124,7 +124,6 @@ describe("/api/posts", function() {
         });
 
     });
-    */
 
 
 });

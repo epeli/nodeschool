@@ -5,12 +5,32 @@ var path = require("path");
 var db = require("../db");
 var app = express.Router();
 
+var auth = require('basic-auth');
+
 app.use(function setUserFromSession(req, res, next) {
-    res.status(501).end(); // TODO
+    db.get("user:" + req.session.loggedInUser, function(err, user){
+        if (err) return next(err);
+        req.user = user;
+        next();
+    });
 });
 
 app.use(function setUserFromBasicAuth(req, res, next) {
-    res.status(501).end(); // TODO
+ 
+  var credentials = auth(req);
+//debugger;
+  db.get('user:'+credentials.name, function(err, user){
+        if (err) return next(err);
+        debugger;
+        if (user.password !== credentials.pass) {
+            res.status(401);
+            return res.json({ error: "bad password" });
+        }
+
+
+        req.user = user;
+        next();
+    });
 });
 
 app.get("/login", function(req, res) {
