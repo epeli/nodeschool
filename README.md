@@ -51,3 +51,4 @@ http://expressjs.com/
 
 - Dojo timer http://jsfiddle.net/uda82/1/ :)
 - https://github.com/opinsys/puavo-ticket/
+- http://passportjs.org/
