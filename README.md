@@ -52,3 +52,5 @@ http://expressjs.com/
 - Dojo timer http://jsfiddle.net/uda82/1/ :)
 - https://github.com/opinsys/puavo-ticket/
 - http://passportjs.org/
+- http://karma-runner.github.io/0.12/index.html
+- http://docs.casperjs.org/en/latest/
