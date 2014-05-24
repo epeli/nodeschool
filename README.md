@@ -40,6 +40,7 @@ http://expressjs.com/
   - RESTful Web Services http://shop.oreilly.com/product/9780596529260.do
   - https://github.com/substack/stream-handbook
   - http://www.manning.com/cantelon/
+  - javascript the good parts http://shop.oreilly.com/product/9780596517748.do
 
 ## Documentation tools
 
