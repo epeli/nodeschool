@@ -11,7 +11,7 @@ http://expressjs.com/
 
 ## Testing
 
-  - Mocha http://visionmedia.github.io/mocha/
+  - Mocha http://mochajs.org/
   - Supertest
     - https://github.com/visionmedia/supertest
     - http://visionmedia.github.io/superagent/
